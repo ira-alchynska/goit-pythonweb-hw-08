@@ -1,9 +1,9 @@
 import logging
 from contextlib import asynccontextmanager
 from fastapi import FastAPI
-from . import routes
-from .models import Base
-from .database import engine
+from .routes import routes
+from .models.models import Base
+from .core.database import engine
 
 
 logging.basicConfig(

@@ -1,6 +1,10 @@
 from fastapi import APIRouter, HTTPException, Depends, Query
 from sqlalchemy.ext.asyncio import AsyncSession
-from . import crud, schemas, database
+
+from app.core import database
+
+from app.crud import crud
+from app.schemas import schemas
 import logging
 
 logger = logging.getLogger(__name__)
